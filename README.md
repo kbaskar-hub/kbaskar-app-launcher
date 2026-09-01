@@ -18,7 +18,7 @@ you just open the dashboard in your normal Windows browser.
    ```
    (if you're copying from Windows instead, just `cp -r` the folder into WSL, e.g. under `~/launcher`)
 
-2. Open **apps.json** and edit each entry to match your real projects:
+2. Copy `apps.json.example` to `apps.json` (this file is gitignored, so your real paths/ports never get committed) and edit each entry to match your real projects:
    - `cwd`: full Linux path to the project folder (e.g. `/home/yourname/projects/frontend`)
    - `cmd`: the exact command that starts it (`npm run dev`, `flask run`, `python manage.py runserver`, `bash start.sh`, etc.)
    - `port`: the port it listens on. Used for the "Open" button, **and** — if set — for checking whether the app is running, by testing whether that port is open. Leave it out to fall back to tracking the process directly instead (only works for apps that stay in the foreground, like `npm run dev`).

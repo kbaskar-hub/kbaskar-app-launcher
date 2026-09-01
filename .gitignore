@@ -2,3 +2,4 @@ logs/
 pids/
 node_modules/
 *.log
+apps.json
