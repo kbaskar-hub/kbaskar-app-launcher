@@ -1,0 +1,25 @@
+[
+  {
+    "id": "webapp",
+    "name": "Example Web App",
+    "cwd": "/home/youruser/projects/example-web-app",
+    "cmd": "npm run dev",
+    "port": 3000
+  },
+  {
+    "id": "api",
+    "name": "Example API Server",
+    "cwd": "/home/youruser/projects/example-api",
+    "cmd": "bash start.sh",
+    "stopCmd": "bash stop.sh",
+    "port": 8000
+  },
+  {
+    "id": "worker",
+    "name": "Example Background Worker",
+    "cwd": "/home/youruser/projects/example-worker/scripts",
+    "cmd": "bash run-local.sh",
+    "stopCmd": "bash stop-local.sh",
+    "port": 8765
+  }
+]
